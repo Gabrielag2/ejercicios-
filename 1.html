@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        VueJS | v-html directive
+    </title>
+  
+    <!-- Load Vuejs -->
+    <script src=
+"https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+    </script>
+    </script>
+</head>
+  
+<body>
+    <div style="text-align: center;width: 600px;">
+        <h1 style="color: green;">
+            Nombres de los integrantes:
+        </h1>
+       
+    </div>
+  
+    <div id="canvas" style="border:1px solid #c21212;
+                            width: 600px;height: 200px;">
+
+        <div v-html="message" id="app">
+        </div>
+    </div>
+  
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: '<h2>Gabriela Estefani Aguilar Reyes '+
+
+                           '<span style="color:blak;">'+
+                            'David Fernando Henríquez Rivera</span>'+
+                         '</h2>'
+            }
+        })
+    </script>
+</body>
+
